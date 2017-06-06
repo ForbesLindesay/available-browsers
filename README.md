@@ -1,5 +1,7 @@
 # available-browsers
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ForbesLindesay/available-browsers.svg)](https://greenkeeper.io/)
+
 Available browsers for sauce labs, browser stack and testing bot.  This lets you get the capabilities for the platform of your choice, and switch effortlessly between them.
 
 [![Build Status](https://img.shields.io/travis/ForbesLindesay/available-browsers/master.svg)](https://travis-ci.org/ForbesLindesay/available-browsers)
