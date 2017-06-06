@@ -1,0 +1,51 @@
+{
+  "name": "available-browsers",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "description": "Available browsers for sauce labs, browser stack and testing bot",
+  "keywords": [],
+  "files": [
+    "lib/"
+  ],
+  "dependencies": {
+    "babel-runtime": "^6.18.0"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-jest": "*",
+    "babel-preset-forbeslindesay": "*",
+    "eslint": "*",
+    "eslint-config-forbeslindesay": "*",
+    "husky": "*",
+    "jest": "*",
+    "lint-staged": "*",
+    "mkdirp": "^0.5.1",
+    "prettier": "*",
+    "rimraf": "^2.6.1",
+    "then-request": "^2.2.0"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "prettier": "prettier --single-quote --trailing-comma all --no-bracket-spacing --write \"**/*.js\"",
+    "prettier:check": "prettier --single-quote --trailing-comma all --no-bracket-spacing --list-different \"**/*.js\"",
+    "build": "babel-node src/get-browserstack & babel-node src/get-saucelabs & babel-node src/get-testingbot",
+    "lint": "eslint src",
+    "test": "jest ./lib --coverage && npm run lint",
+    "watch": "jest ./lib --coverage --watch"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --trailing-comma all --no-bracket-spacing --write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ForbesLindesay/available-browsers.git"
+  },
+  "author": {
+    "name": "Forbes Lindesay",
+    "url": "http://github.com/ForbesLindesay"
+  },
+  "license": "MIT"
+}
