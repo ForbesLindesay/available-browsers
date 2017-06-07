@@ -26,8 +26,8 @@
   },
   "scripts": {
     "precommit": "lint-staged",
-    "prettier": "prettier --single-quote --trailing-comma all --no-bracket-spacing --write \"**/*.js\"",
-    "prettier:check": "prettier --single-quote --trailing-comma all --no-bracket-spacing --list-different \"**/*.js\"",
+    "prettier": "prettier --single-quote --trailing-comma all --no-bracket-spacing --write \"{lib,src}/**/*.js\"",
+    "prettier:check": "prettier --single-quote --trailing-comma all --no-bracket-spacing --list-different \"{lib,src}/**/*.js\"",
     "build": "babel-node src/get-browserstack & babel-node src/get-saucelabs & babel-node src/get-testingbot",
     "lint": "eslint src",
     "test": "jest ./lib --coverage && npm run lint",
