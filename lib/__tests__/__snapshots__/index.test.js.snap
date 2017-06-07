@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`browserstack 1`] = `
+Object {
+  "browserName": "chrome",
+  "browser_version": "58.0",
+  "os": "Windows",
+  "os_version": "10",
+}
+`;
+
+exports[`browserstack browser diff 1`] = `""`;
+
+exports[`saucelabs 1`] = `
+Object {
+  "browserName": "chrome",
+  "platform": "Windows 10",
+  "version": "58.0",
+}
+`;
+
+exports[`saucelabs browser diff 1`] = `""`;
+
+exports[`testingbot 1`] = `
+Object {
+  "browserName": "chrome",
+  "platform": "WIN10",
+  "version": "58",
+}
+`;
+
+exports[`testingbot browser diff 1`] = `
+" + phantomjs
+ + opera_tablet
+ + opera_phone
+ + firefox-unbranded"
+`;
