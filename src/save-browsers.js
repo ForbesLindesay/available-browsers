@@ -36,7 +36,7 @@ export default function saveBrowsers(filename, browsers) {
                 .sort()
                 .map(platform => {
                   return `      '${platform}': ${stringifyObject(
-                    browsers[browserName][version][platform],
+                    browsers[browserName][version][platform]
                   )},`;
                 })
                 .join('\n') +
@@ -52,6 +52,6 @@ export default function saveBrowsers(filename, browsers) {
     filename,
     "'use strict';\n\n// This file is auto-generated\n\n// prettier-ignore\nmodule.exports = {\n" +
       src +
-      '\n};',
+      '\n};'
   );
 }

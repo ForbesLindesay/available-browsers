@@ -91,7 +91,7 @@ request('get', 'https://saucelabs.com/rest/v1/info/platforms/webdriver')
             browserName: browser.api_name,
             platform: browser.os,
             version: addDotZero(browser.short_version),
-          },
+          }
         );
         return;
       }
@@ -104,7 +104,7 @@ request('get', 'https://saucelabs.com/rest/v1/info/platforms/webdriver')
             browserName: browser.api_name,
             platform: browser.os,
             version: browser.long_version.replace(/\.$/, ''),
-          },
+          }
         );
         return;
       }

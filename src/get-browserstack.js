@@ -35,7 +35,7 @@ function write(browserID, version, platform, browser) {
 const USERNAME = 'forbeslindesay1';
 const ACCESS_KEY = readFileSync(
   __dirname + '/../browserstack-key.txt',
-  'utf8',
+  'utf8'
 ).trim();
 
 request('get', 'https://www.browserstack.com/automate/browsers.json', {
@@ -82,7 +82,7 @@ request('get', 'https://www.browserstack.com/automate/browsers.json', {
           browser_version: browser.browser_version,
           os: browser.os,
           os_version: browser.os_version,
-        },
+        }
       );
     });
   })
