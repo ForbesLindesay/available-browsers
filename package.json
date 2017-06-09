@@ -1,6 +1,6 @@
 {
   "name": "available-browsers",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "description": "Available browsers for sauce labs, browser stack and testing bot",
   "keywords": [],
